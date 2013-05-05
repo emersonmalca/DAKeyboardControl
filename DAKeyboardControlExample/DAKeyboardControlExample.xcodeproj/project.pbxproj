@@ -16,6 +16,10 @@
 		6366DFDB15B3E76100FE53DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6366DFDA15B3E76100FE53DE /* ViewController.m */; };
 		63DD74B915B424B700E33D01 /* DAKeyboardControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DD74B815B424B700E33D01 /* DAKeyboardControl.m */; };
 		63ECD0631628CC5A004D8D10 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63ECD0621628CC5A004D8D10 /* Default-568h@2x.png */; };
+		C846D0071736088E00D91C69 /* MessageSentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C846D0051736088E00D91C69 /* MessageSentViewController.m */; };
+		C846D0081736088E00D91C69 /* MessageSentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C846D0061736088E00D91C69 /* MessageSentViewController.xib */; };
+		C846D00C17360DEB00D91C69 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C846D00A17360DEB00D91C69 /* MainViewController.m */; };
+		C846D00D17360DEB00D91C69 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C846D00B17360DEB00D91C69 /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,12 @@
 		63DD74B715B424B700E33D01 /* DAKeyboardControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAKeyboardControl.h; sourceTree = "<group>"; };
 		63DD74B815B424B700E33D01 /* DAKeyboardControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAKeyboardControl.m; sourceTree = "<group>"; };
 		63ECD0621628CC5A004D8D10 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		C846D0041736088E00D91C69 /* MessageSentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageSentViewController.h; sourceTree = "<group>"; };
+		C846D0051736088E00D91C69 /* MessageSentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageSentViewController.m; sourceTree = "<group>"; };
+		C846D0061736088E00D91C69 /* MessageSentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageSentViewController.xib; sourceTree = "<group>"; };
+		C846D00917360DEB00D91C69 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		C846D00A17360DEB00D91C69 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		C846D00B17360DEB00D91C69 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +95,12 @@
 				6366DFD715B3E76100FE53DE /* AppDelegate.m */,
 				6366DFD915B3E76100FE53DE /* ViewController.h */,
 				6366DFDA15B3E76100FE53DE /* ViewController.m */,
+				C846D00917360DEB00D91C69 /* MainViewController.h */,
+				C846D00A17360DEB00D91C69 /* MainViewController.m */,
+				C846D00B17360DEB00D91C69 /* MainViewController.xib */,
+				C846D0041736088E00D91C69 /* MessageSentViewController.h */,
+				C846D0051736088E00D91C69 /* MessageSentViewController.m */,
+				C846D0061736088E00D91C69 /* MessageSentViewController.xib */,
 				6366DFCE15B3E76100FE53DE /* Supporting Files */,
 			);
 			path = DAKeyboardControlExample;
@@ -165,6 +181,8 @@
 			files = (
 				6366DFD215B3E76100FE53DE /* InfoPlist.strings in Resources */,
 				63ECD0631628CC5A004D8D10 /* Default-568h@2x.png in Resources */,
+				C846D0081736088E00D91C69 /* MessageSentViewController.xib in Resources */,
+				C846D00D17360DEB00D91C69 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +197,8 @@
 				6366DFD815B3E76100FE53DE /* AppDelegate.m in Sources */,
 				6366DFDB15B3E76100FE53DE /* ViewController.m in Sources */,
 				63DD74B915B424B700E33D01 /* DAKeyboardControl.m in Sources */,
+				C846D0071736088E00D91C69 /* MessageSentViewController.m in Sources */,
+				C846D00C17360DEB00D91C69 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +269,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DAKeyboardControlExample/DAKeyboardControlExample-Prefix.pch";
 				INFOPLIST_FILE = "DAKeyboardControlExample/DAKeyboardControlExample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -261,7 +281,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DAKeyboardControlExample/DAKeyboardControlExample-Prefix.pch";
 				INFOPLIST_FILE = "DAKeyboardControlExample/DAKeyboardControlExample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

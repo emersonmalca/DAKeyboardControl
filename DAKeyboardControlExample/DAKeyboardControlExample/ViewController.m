@@ -8,12 +8,15 @@
 
 #import "ViewController.h"
 #import "DAKeyboardControl.h"
+#import "MessageSentViewController.h"
 
 @interface ViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ViewController {
+    UITextField *_textField;
+}
 
 - (void)viewDidLoad
 {
@@ -43,15 +46,17 @@
     textField.borderStyle = UITextBorderStyleRoundedRect;
     textField.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     [toolBar addSubview:textField];
+    _textField = textField;
     
     UIButton *sendButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     sendButton.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;
-    [sendButton setTitle:@"Send" forState:UIControlStateNormal];
+    [sendButton setTitle:@"Done" forState:UIControlStateNormal];
     sendButton.frame = CGRectMake(toolBar.bounds.size.width - 68.0f,
                                   6.0f,
                                   58.0f,
                                   29.0f);
     [toolBar addSubview:sendButton];
+    [sendButton addTarget:self action:@selector(btnSendPressed:) forControlEvents:UIControlEventTouchUpInside];
     
     
     self.view.keyboardTriggerOffset = toolBar.bounds.size.height;
@@ -80,6 +85,16 @@
         return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
     else
         return YES;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [_textField becomeFirstResponder];
+}
+
+- (void)btnSendPressed:(UIButton *)sender {
+    [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 @end
